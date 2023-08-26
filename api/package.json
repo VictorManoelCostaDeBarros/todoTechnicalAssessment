@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start:prod": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@prisma/client": "5.2.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.21.0",
+    "moment": "^2.29.4",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "prisma": "^5.2.0",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "tsx": "^3.12.7",
+    "typescript": "^5.2.2"
+  }
+}

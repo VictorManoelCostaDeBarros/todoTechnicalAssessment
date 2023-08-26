@@ -1,0 +1,40 @@
+.task {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.task p {
+  flex: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.task button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+  transition: color 0.1s;
+}
+
+.task button:hover {
+  color: var(--danger);
+}
+
+.task input {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+}

@@ -1,0 +1,114 @@
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1rem;  
+}
+
+.newTask {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 90px;
+  gap: 8px;
+  margin-top: -1.65rem;
+}
+
+.newTask input {
+  height: 3.3rem;
+  padding: 16px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  color: var(--white);
+}
+
+.newTask input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 0.8;
+  filter: invert(0.8);
+}
+
+.newTask select {
+  height: 3.3rem;
+  padding: 16px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  color: var(--white);
+}
+
+.newTask button {
+  height: 3.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  background: var(--blue-dark);
+  border: 0;
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: bold;
+
+  transition: background-color 0.3s;
+}
+
+.newTask button:hover {
+  background: var(--blue);
+}
+
+.main {
+  width: 100%;
+  margin-top: 64px;
+}
+
+.main .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.header .allTasks {
+  font-size: 0.9rem;
+  color: var(--blue);
+  line-height: 1.1rem;
+  font-weight: 700;
+}
+
+.header .doneTasks {
+  font-size: 0.9rem;
+  color: var(--purple);
+  line-height: 1.1rem;
+  font-weight: 700;
+}
+
+.badget {
+  padding: 2px 8px;
+  border-radius: 20px;
+  background-color: var(--gray-400);
+  color: var(--white);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.emptyContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 64px;
+  border-top: 1px solid var(--gray-300);
+  /* border-radius: 8px; */
+}
+
+.emptyContent p {
+  font-weight: bold;
+  margin-top: 1rem;
+}
